@@ -9,12 +9,6 @@ int numberA = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число");
 int numberB = Convert.ToInt32(Console.ReadLine());
 int reminder = numberB % numberA;
-if(numberB % numberA > 0)
-{
-       Console.Write("Не кратно, остаток ");
-       Console.WriteLine(reminder);
-}
-else
-{
-    Console.Write("Кратно");
-}
+if(reminder > 0) Console.Write($"Не кратно, остаток {reminder}");
+else Console.Write("Кратно");
+
